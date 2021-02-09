@@ -58,5 +58,5 @@ const display = data => {
             <h1 class="lead">${data.weather[0].main}</h1>
         </div>
         `
-    document.getElementsByClassName('weather')[0].innerHTML += div;
+    document.getElementsByClassName('weather')[0].innerHTML = div;
 }
