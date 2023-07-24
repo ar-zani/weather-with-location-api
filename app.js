@@ -60,3 +60,12 @@ const display = data => {
         `
     document.getElementsByClassName('weather')[0].innerHTML = div;
 }
+
+// handle enter press
+const input = document.getElementsByClassName("form-control")[0];
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementsByClassName("btn")[0].click();
+  }
+});
